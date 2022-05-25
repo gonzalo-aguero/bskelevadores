@@ -1,0 +1,114 @@
+.formConsultas > h1{
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-size: 30px;
+    color: #838383;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.formConsultas input[type="text"],
+.formConsultas input[type="email"],
+textarea{
+    background: none;
+    border:none;
+    border-bottom: 1px #838383 solid;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+textarea{
+    height: 175px;
+    resize: vertical;
+}
+.btnEnviar{
+    position: relative;
+    display: inline-block;
+    margin:auto;
+    border: 2px #f19253 solid;
+    background: none;
+    color:white;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btnEnviar:hover{
+    transform: scale(0.95,0.95);
+    transition: 0.2s;
+}
+
+
+#formPresupuesto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#formPresupuesto label{
+    margin-bottom:15px;
+}
+#formPresupuesto input[type="text"],
+#formPresupuesto input[type="email"],
+#formPresupuesto input[type="tel"],
+#formPresupuesto textarea{
+    border: 1px #d8d8d8 solid;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.btnEnviar2{
+    position: relative;
+    display: inline-block;
+    margin:auto;
+    border: 2px #f19253 solid;
+    background: #f19253;
+    color:white;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btnEnviar2:hover{
+    transform: scale(0.95,0.95);
+    transition: 0.2s;
+}
+.red{
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(246, 75, 75);
+}
+#formReseña{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#formReseña label{
+    margin-bottom:15px;
+}
+#formReseña label[for="anonimo"]{
+    text-align:center;
+}
+#formReseña input[type="text"],
+#formReseña input[type="email"],
+#formReseña input[type="tel"],
+#formReseña textarea,
+#formReseña select,
+#formReseña input[type="checkbox"]{
+    border: 1px #d8d8d8 solid;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}

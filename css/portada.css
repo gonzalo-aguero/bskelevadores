@@ -1,0 +1,133 @@
+.portada{
+    position: relative;
+    width:100%;
+    height: auto;
+}
+.div-portada{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.div-portada:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index:1;
+}
+.div-portada{
+    text-align: center;
+}
+.div-portada > div{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color:white;
+}
+.div-portada > div > h1{
+    font-size: 90px;
+    line-height: 95%;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 125px;
+    margin-bottom: 35px;
+}
+.div-portada > div > h3{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.btnPortada{
+    position: relative;
+    display: inline-block;
+    margin:auto;
+    border: 2px white solid;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btnPortada:hover{
+    transform: scale(0.95,0.95);
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+ @media screen and (max-width: 800px){
+    .div-portada{
+        height: 600px;
+    }
+    .div-portada > div > h1{
+        width: 80%;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .div-portada > div > h3{
+        font-size: 27px;
+        width: 65%;
+        margin-bottom: 30px;
+    }
+    .btnPortada:hover{
+        transform: none;
+    }
+    .btnPortada:active{
+        transform: scale(0.95,0.95);
+        transition: 0.2s;
+    }
+ }
+ @media screen and (max-width: 720px){
+    .div-portada > div > h1{
+        width: 90%;
+        margin-top: 70px;
+        margin-bottom: 25px;
+    }
+    .div-portada > div > h3{
+        font-size: 27px;
+        width: 75%;
+        margin-bottom: 25px;
+    }
+ }
+ @media screen and (max-width: 500px){
+    .div-portada > div > h1{
+        font-size: 70px;
+        width: 90%;
+        margin-top: 70px;
+        margin-bottom: 25px;
+    }
+    .div-portada > div > h3{
+        font-size: 27px;
+        width: 75%;
+        margin-bottom: 25px;
+    }
+ }
+ @media screen and (max-width: 375px){
+    .div-portada > div > h1{
+        font-size: 60px;
+        width: 95%;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .div-portada > div > h3{
+        font-size: 20px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+ }

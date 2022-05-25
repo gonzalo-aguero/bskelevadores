@@ -1,0 +1,257 @@
+.portadaM2{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.portadaM2:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+.portadaM2 > div{
+    position:relative;
+    z-index: 1;
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.portadaM2 > div > h1{
+    font-size: 85px;
+    line-height: 95%;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.portadaM2 > div > h3{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    width: 65%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#section-reseñas{
+    background: white;
+    padding: 10%
+}
+#blq-estrellasTotal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#blq-estrellasTotal > img{
+    width: 80px;
+    margin: 15px;
+}
+#blq-estrellasTotal > .starVacia{
+    opacity: 70%;
+}
+#section-reseñas h1{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+#section-reseñas > div > div > p{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#section-reseñas > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: center;   
+    align-items: flex-start;
+}
+#section-reseñas > div > div{
+    width:50%;
+}
+#div-reseñas, #div-formReseña{
+    padding: 2.5%;
+}
+/*RESEÑA*/
+.reseña{
+    width: 100%;
+    min-height: 125px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+    border-bottom: 1px rgb(197, 197, 197) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;   
+    border: 1px rgb(212, 212, 212) solid;
+}
+.reseña > img{
+    height: 100px;
+}
+.reseña > div > div{
+    min-height: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.reseña > div > div > span{
+    font-weight: bold;
+    font-size: 12px;
+}
+.reseña > div > div > a{
+    font-weight: bold;
+    font-size: 12px;
+}
+.reseña > div > p{
+    height: 100px;
+    font-size: 15px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1080px){
+    #section-reseñas{
+        padding: 5%;
+    }
+}
+@media screen and (max-width:880px){
+    .portadaM2 > div > h1{
+        font-size: 85px;
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .portadaM2 > div > h3{
+        font-size: 22.5px;
+        width: 75%;
+    }
+    #section-reseñas{
+        padding: 2.5%;
+    }
+}
+@media screen and (max-width:800px){
+    #section-reseñas{
+        padding: 5%;
+    }
+    #section-reseñas > div{
+        flex-direction: column;
+        justify-content: center;   
+        align-content: center;
+    }
+    #section-reseñas > div > div{
+        width:100%;
+    }
+}
+@media screen and (max-width:720px){
+    .portadaM2 > div > h1{
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    .portadaM2 > div > h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:550px){
+    .portadaM2 > div > h1{
+        width: 95%;
+        font-size: 60px;
+    }
+    .portadaM2 > div > h3{
+        width: 75%;
+        font-size: 20px;
+    }
+    #blq-estrellasTotal > img{
+        width: 70px;
+        margin: 5px;
+    }
+    #section-reseñas h1{
+        font-size: 40px;
+    }
+    #section-reseñas > div > div > p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:400px){
+    #blq-estrellasTotal > img{
+        width: 60px;
+        margin: 1px;
+    }
+    /*RESEÑA*/
+    .reseña{
+        min-height: 80px;
+    }
+    .reseña > img{
+        height: 80px;
+    }
+    .reseña > div > div{
+        min-height: 20px;
+    }
+    .reseña > div > div > span{
+        font-size: 10px;
+    }
+    .reseña > div > div > a{
+        font-size: 10px;
+    }
+    .reseña > div > p{
+        height: 80px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:320px){
+    .portadaM2 > div > h1{
+        font-size: 45px;
+    }
+    .portadaM2 > div > h3{
+        font-size: 15px;
+    }
+    #blq-estrellasTotal > img{
+        width: 35px;
+    }
+    #section-reseñas h1{
+        font-size: 30px;
+    }
+    #section-reseñas > div > div > p{
+        font-size: 15px;
+    }
+    /*RESEÑA*/
+    .reseña{
+        min-height: 60px;
+    }
+    .reseña > img{
+        height: 60px;
+    }
+    .reseña > div > div{
+        min-height: 15px;
+    }
+    .reseña > div > div > span{
+        font-size: 8px;
+    }
+    .reseña > div > div > a{
+        font-size: 8px;
+    }
+    .reseña > div > p{
+        height: 60px;
+        font-size: 10px;
+    }
+}

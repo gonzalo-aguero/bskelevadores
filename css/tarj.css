@@ -1,0 +1,180 @@
+/* tarjetas en general*/
+.tarjetaEditable h2{
+    color: var(--colorGris_txt);
+    font-size: 28px;
+}
+.tarjetaEditable p{
+    color: var(--colorGrisClaro_txt);
+    font-size: 22px;
+}
+.divImgTarj{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.divImgTarj img{
+    border-radius: 5px;
+    cursor:pointer;
+}
+.divTxtTarj{
+    width: 70%;
+}
+/* fin tarjetas en general*/
+/*tarjeta tipo 1*/
+/*fin tarjeta tipo 1*/
+/*tarjeta tipo 2*/
+.tarjeta_T2{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.tarjeta_T2 img{
+    width: 100%;
+    margin-right: 20px;
+}
+.tarjeta_T2 h2{
+    text-align: center;
+    margin: 15px;
+    padding-top: 15px;
+}
+/*fin tarjeta tipo 2*/
+/*tarjeta tipo 3*/
+.tarjeta_T3{
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    /*border: 1px rgb(199, 199, 199) solid;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);*/
+}
+.tarjeta_T3 img{
+    width: 100%;
+}
+.tarjeta_T3 h2{
+    text-align: center;
+    margin: 15px;
+    font-size: 25px;
+    color: var(--colorEspecifico);
+}
+.tarjeta_T3 p{
+    text-align: center;
+    font-size: 18px;
+}
+/*fin tarjeta tipo 3*/
+/*tarjeta tipo 4*/
+.tarjeta_T4{
+    position: relative;
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.tarjeta_T4 img{
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+.tarjeta_T4 h2{
+    text-align: center;
+    margin: 15px;
+    padding-top: 15px;
+}
+/*fin tarjeta tipo 4*/
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+/* tarjetas en general*/
+.tarjetaEditable h2{
+    font-size: 20px;
+}
+.tarjetaEditable p{
+    font-size: 15px;
+}
+.divImgTarj{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.divTxtTarj{
+    width: 100%;
+}
+/* fin tarjetas en general*/
+/*tarjeta tipo 3*/
+.tarjeta_T3{
+    width: 45%;
+}
+/*fin tarjeta tipo 3*/
+/*tarjeta tipo 2 y 4*/
+.tarjeta_T2, .tarjeta_T4{
+    position: relative;
+    text-align: justify;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+}
+.tarjeta_T2 img, .tarjeta_T4 img{
+    width:100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+.tarjeta_T2 h2, .tarjeta_T4 h2{
+    margin: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+.tarjeta_T2 p, .tarjeta_T4 p{
+    text-align: left;
+}
+/*fin tarjeta tipo 2 y 4*/
+}
+@media screen and (max-width: 720px){
+    /*tarjeta tipo 2 y 4*/
+    .tarjeta_T2, .tarjeta_T4{
+        width: 48%;
+    }
+    /*fin tarjeta tipo 2 y 4*/
+}
+@media screen and (max-width: 550px){
+    /*tarjeta tipo 2 y 4*/
+    .tarjeta_T2, .tarjeta_T4{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    /*fin tarjeta tipo 2 y 4*/
+}
+@media screen and (max-width: 450px){
+    /*tarjeta tipo 3*/
+    .tarjeta_T3{
+        width: 100%;
+    }
+    .tarjeta_T3 h2{
+        margin: 10px;
+        font-size: 25px;
+    }
+    .tarjeta_T3 p{
+        font-size: 18px;
+    }
+    /*fin tarjeta tipo 3*/
+}
+@media screen and (max-width: 380px){
+    /*tarjeta tipo 2 y 4*/
+    .tarjeta_T2 h2, .tarjeta_T4 h2{
+        margin: 10px;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    .tarjeta_T2 p, .tarjeta_T4 p{
+        font-size: 12px;
+    }
+    /*fin tarjeta tipo 2 y 4*/
+    }

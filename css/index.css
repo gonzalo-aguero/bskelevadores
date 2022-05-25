@@ -1,0 +1,347 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:"Montserrat";
+}  
+:root{
+    --colorLogo: #0d5c73;
+    --colorNavegacion: #030303;
+    --colorEspecifico: #f19253;
+    --colorGrisClaro_txt: #838383;
+    --colorGris_txt: #6b6b6b;
+}
+body{
+    overflow: hidden;
+}
+#fondo1{
+    position: fixed;
+    z-index: -2;
+    top: -100px;
+    left:0;
+    width:100%;
+}
+/*SECCIÓN PORQUÉ ELEGIRNOS*/
+#section-porqueElegirnos{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 18%, rgba(0,0,0,0.809943960494354) 49%, rgba(255,255,255,0) 100%); 
+    color:white;
+    padding: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.div-section-title > h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: var(--colorEspecifico);
+}
+.div-section-txt{
+    margin-bottom: 10px;
+}
+.div-section-txt > h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.div-section-txt > p{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #f19253;
+    font-size: 20px;
+}
+/*SECCIÓN CARACTERÍSTICAS*/
+#section-caracteristicas{
+    background: white;
+    padding:10%;
+}
+#blq-medidas{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#blq-medidas > h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: #f19253;
+    text-align: center;
+}
+#blq-tarjetasMedidas{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/*SECCIÓN PEDÍ TU PRESUPUESTO*/
+#section-pediPresupuesto{
+    text-align: center;
+    padding: 10%;
+    color:white;
+    background: rgba(0,0,0,0.6);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 18%, rgba(0,0,0,0.809943960494354) 49%, rgba(255,255,255,0) 100%); 
+}
+#section-pediPresupuesto > div > h1{
+    font-size: 70px;
+    line-height: 95%;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#section-pediPresupuesto > div > h3{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+/*FOOTER*/
+footer{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer:before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.85);
+    z-index:1;
+}
+footer > div{
+    position: relative;
+    width: 33.3%;
+    display: block;
+    z-index: 2;
+}
+footer > div > h1{
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-size: 30px;
+    color: #838383;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+footer > div > p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+footer > div span{
+    color: #da9e2e;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s;
+}
+footer > div > p > span{
+    display: block;
+    font-size:20px;
+    margin: 15px;
+}
+footer > div span:hover{
+    color: #f0c9b0;
+    transition: 0.2s;
+}
+/*Elementos generales*/
+.btnMasInformacion{
+    position: relative;
+    display: inline-block;
+    margin:auto;
+    border: 2px white solid;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btnMasInformacion:hover{
+    transform: scale(0.95,0.95);
+    transition: 0.2s;
+}
+.Y100px{
+    display: block;
+    width:100%;
+    height: 100px;
+}
+#separador{
+    background: white;
+    padding:5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.cargandoGif{
+    height: 50px;
+    width: 50px;
+    margin:auto;
+    display:none;
+}
+/*
+ * Elementos que estan ocultos pero luego se muestran con animaciones
+ */
+.div-imgClientes > img{
+    display:none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+    #fondo1{
+        top: 0;
+        width:100%;
+        height: 100%;
+    }
+    /*SECCIÓN CARACTERÍSTICAS*/
+    #section-caracteristicas{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10%;
+    }
+    #blq-tarjetasMedidas{
+        flex-wrap: wrap;
+    }
+    /*Elementos generales*/
+    .Y100px{
+        display:none;
+    }
+}
+@media screen and (max-width: 720px){
+    #section-caracteristicas{
+        padding: 5%;
+    }
+    #separador{
+        padding:10%;
+    }
+}
+@media screen and (max-width: 600px){
+    /*FOOTER*/
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer > div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    /*SECCIÓN PORQUÉ ELEGIRNOS*/
+    #section-porqueElegirnos{
+        padding: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .div-section-title > h1{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .div-section-txt > p{
+        font-size: 18px;
+    }
+    /*SECCIÓN CARACTERÍSTICAS*/
+    #section-caracteristicas{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 10%;
+    }
+    /*Elementos generales*/
+    .btnMasInformacion:hover{
+        transform: none;
+    }
+    .btnMasInformacion:active{
+        transform: scale(0.95,0.95);
+        transition: 0.2s;
+    }
+}
+@media screen and (max-width: 450px){
+    /*SECCIÓN PEDÍ TU PRESUPUESTO*/
+    #section-pediPresupuesto{
+        padding: 5%;
+    }
+    #section-pediPresupuesto > div > h1{
+        font-size: 40px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #section-pediPresupuesto > div > h3{
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px){
+    /*SECCIÓN PORQUÉ ELEGIRNOS*/
+    #section-porqueElegirnos{
+        padding: 10%;
+    }
+    .div-section-title > h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .div-section-txt > h1{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .div-section-txt > p{
+        font-size: 15px;
+    }
+    /*SECCIÓN CARACTERÍSTICAS*/
+    #section-caracteristicas{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 10%;
+    }
+    /*Elementos generales*/
+    .btnMasInformacion{
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 250px){
+    /*SECCIÓN PEDÍ TU PRESUPUESTO*/
+    #section-pediPresupuesto > div > h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    #section-pediPresupuesto > div > h3{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}

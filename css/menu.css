@@ -1,0 +1,234 @@
+header{
+    position:relative;
+    z-index: 7;
+}
+header > nav{
+    background: #030303;
+    color: white;
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.div-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.div-nav > img{
+    height: 85px;
+}
+.div2-nav{
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.div2-nav > div{
+    width:40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.div2-nav > div > img{
+    width: 100%;
+}
+#btnPresupuesto{
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 30px;
+    border: 1px #f19253 solid;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+#btnPresupuesto:hover{
+    color: #bebebe;
+    transition: 0.2s;
+}
+#btnAbrirMenu{
+    opacity: 75%;
+}
+#btnAbrirMenu:hover{
+    transform: scale(0.9,0.9);
+    transition: 0.2s;
+    opacity: 100%;
+}
+#div-menu{
+    position: fixed;
+    display:none;
+    width:100%;
+    height: 100%;
+    z-index: 8;
+    top: 0;
+    left:0;
+    background: rgba(0, 0, 0, 0.75);
+}
+#div-menu > div{
+    position: fixed;
+    display:block;
+    width:60%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+    left:0;
+}
+#div-menu > ul{
+    position: fixed;
+    display:block;
+    width:40%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    right:0;
+    background: #353638;
+    color: #999999;
+    padding: 20px;
+    padding-top: 60px;
+}
+#btnIrInicio{
+    margin-top: 30px;
+}
+#btnCerrarMenu{
+    position:relative;
+    height: 40px;
+    float:right;
+    cursor:pointer;
+    z-index:11;
+    transition: 0.2s;
+}
+#btnCerrarMenu:hover{
+    transform: scale(0.9,0.9);
+    transition: 0.2s;
+}
+#div-menu > ul > li{
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#div-menu > ul > li:hover{
+    background-color: #464749;
+    color:white;
+    transition: 0.2s;
+}
+#btnPresupuesto_menu{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px #f19253 solid;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#btnPresupuesto_menu:hover{
+    color: #9c9c9c;
+    transition: 0.2s;
+}
+/*
+ * Elementos que estan ocultos pero luego se muestran con animaciones
+ */
+.div-nav > img{
+    display:none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+    header > nav{
+        height: 90px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .div-nav > img{
+        height: 80px;
+    }
+    #div-menu > div{
+        width:50%;
+    }
+    #div-menu > ul{
+        width:50%;
+        padding: 20px;
+    } 
+    #btnCerrarMenu{
+        height: 40px;
+    }
+    #btnCerrarMenu:hover{
+        transform: none;
+    }
+    #btnCerrarMenu:active{
+        transform: scale(0.9,0.9);
+        transition: 0.2s;
+    }
+    #div-menu > ul > li{
+        font-size: 25px;
+        padding: 15px;
+    }
+    #div-menu > ul > li:hover{
+        transform: none;
+        background: #353638;
+        color: #999999;
+    }
+    #div-menu > ul > li:active{
+        background-color: #464749;
+        color:white;
+        transition: 0.2s;
+    }
+}
+/*
+ *Adaptaciones pincipales: {
+ *  "Logo y titulo",
+ *  "Menu",
+ *  "btnPresupuesto"
+ *} 
+ */
+ @media screen and (max-width: 580px){
+    .div2-nav > #btnPresupuesto{
+        display: none;
+    }
+    #div-menu > div{
+        width:35%;
+    }
+    #div-menu > ul{
+        width:75%;
+        padding: 15px;
+    }
+    #div-menu > ul > li{
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 320px){
+    .div-nav > img{
+        height: 70px;
+    }
+}
+@media screen and (max-width: 300px){
+    .div-nav > img{
+        height: 60px;
+    }
+}
+@media screen and (max-width: 250px){
+    .div-nav > img{
+        height: 50px;
+    }
+}

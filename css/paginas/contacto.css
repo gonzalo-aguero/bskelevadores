@@ -1,0 +1,96 @@
+.portadaM2{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.portadaM2:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+.portadaM2 > div{
+    position:relative;
+    z-index: 1;
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.portadaM2 > div > h1{
+    font-size: 90px;
+    line-height: 95%;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 125px;
+    margin-bottom: 35px;
+}
+.portadaM2 > div > h3{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+#section-formPresupuesto > h1{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+#section-formPresupuesto > p{
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.bgWhite{
+    background: white;
+}
+.padding10{
+    padding: 10%;
+}
+
+
+
+
+
+
+@media screen and (max-width:720px){
+    .portadaM2 > div > h1{
+        width: 80%;
+    }
+    .portadaM2 > div > h3{
+        width: 65%;
+    }
+}
+@media screen and (max-width:550px){
+    .portadaM2 > div > h1{
+        width: 95%;
+        font-size: 60px;
+    }
+    .portadaM2 > div > h3{
+        width: 75%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:320px){
+    .portadaM2 > div > h1{
+        font-size: 45px;
+    }
+    .portadaM2 > div > h3{
+        font-size: 15px;
+    }
+}
