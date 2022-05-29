@@ -1,50 +1,3 @@
-<?php 
-/*
-function cargarImg($idEImg){
-    require('php/connection.php'); 
-    //$idEImg = $_POST['idEImg'];
-    $sql = "SELECT * FROM eimg WHERE idEImg = '$idEImg'";
-    $resultado = mysqli_query($connection,$sql);
-    $consulta = mysqli_fetch_array($resultado);
-        $idEImg = $consulta[0];
-        $idImg = $consulta[1];
-    //Se obtiene la imagen
-    $sql = "SELECT * FROM imagenes WHERE idImg = '$idImg'";
-    $resultado = mysqli_query($connection,$sql);
-    $numRegistros = mysqli_num_rows($resultado);
-    if($numRegistros >= 1){
-        $consulta = mysqli_fetch_array($resultado);
-        $idImg = $consulta[0];
-        $imagen = $consulta[1];
-        $categoria = $consulta[2];
-        $anchoimg = $consulta[3];
-        $altoimg = $consulta[4];
-        $imagen = array(
-            'idImg'=>$consulta[0],//id
-            'img'=>$consulta[1],//imagen
-            'cat'=>$consulta[2],//categoria
-            'anchoImg'=>$consulta[3],//width
-            'altoImg'=>$consulta[4]//height
-        );
-        return $imagen ;
-    }else{
-        return '';
-    }
-}
-require('php/connection.php'); 
-$sql = "SELECT * FROM eimg";
-$resultado = mysqli_query($connection,$sql);
-$x = 0;
-$imagenes = array();
-while (mysqli_fetch_array($resultado)) {
-    $x++;
-    $imagenes[$x-1] = cargarImg($x);   
-}
-echo $imagenes[0][1];
-echo '<img id="imagen'.$idEImg.'" src="data:image/jpg;base64,'.base64_encode($imagen).'"'.
-'style=" width:'.$anchoimg.'; height:'.$altoimg.' ">'
-*/
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -73,15 +26,6 @@ echo '<img id="imagen'.$idEImg.'" src="data:image/jpg;base64,'.base64_encode($im
     <script src="js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <script src="js/jquery.bxslider.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVXSWLMZXB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PVXSWLMZXB');
-    </script>
     <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
