@@ -9,7 +9,7 @@ if(!empty($n) && !empty($c) && !empty($m)) {
         ."Mensaje: ".$m."\n\n\n\n\n"
         ."Este es un correo enviado automáticamente, no responder.";
     $asunto = "Mensaje de consulta";
-    $emailReceptor = "bskelevadores@gmail.com";
+    $emailReceptor = "gonzaloaguerodev@gmail.com";
     $emailEmisor = "notificaciones@bskelevadores.com";
 
     $header = "From: ".$emailEmisor. "\r\n";

@@ -13,7 +13,7 @@ if(!empty($n) && !empty($a) && !empty($c) && !empty($t)) {
         ."Comentarios, detalles, especificaciones, etc: \n".$m."\n\n\n\n\n"
         ."Este es un correo enviado automáticamente, no responder.";
     $asunto = "Formulario de contacto";
-    $emailReceptor = "bskelevadores@gmail.com";
+    $emailReceptor = "gonzaloaguerodev@gmail.com";
     $emailEmisor = "notificaciones@bskelevadores.com";
 
     $header = "From: ".$emailEmisor. "\r\n";
